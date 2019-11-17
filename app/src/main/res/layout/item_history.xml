@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imgTipe"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_add_black_24dp"
+        android:background="@drawable/icon_debit"
+        android:layout_marginStart="16dp"
+        android:padding="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtUraian"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Beli Buku"
+        android:textColor="@color/Gray2Light"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtNominal"
+        app:layout_constraintStart_toEndOf="@id/imgTipe"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNominal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Rp 50.000"
+        android:textAlignment="textEnd"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTanggal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="10 November 2019, 09:37"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/txtNominal"
+        app:layout_constraintStart_toEndOf="@+id/imgTipe"
+        app:layout_constraintTop_toBottomOf="@+id/txtUraian" />
+
+    <TextView
+        android:id="@+id/txtHapus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtTanggal"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Hapus"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toEndOf="@id/imgTipe"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

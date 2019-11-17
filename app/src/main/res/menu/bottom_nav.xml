@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/riwayat"
+        android:title="Riwayat"
+        android:icon="@drawable/ic_event_black_24dp" />
+
+    <item android:id="@+id/laporan"
+        android:title="Laporan"
+        android:icon="@drawable/ic_poll_black_24dp"/>
+
+</menu>

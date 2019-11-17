@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatisticsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/txtJumlahTransaksi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Jumlah Transaksi"
+                android:textColor="@color/Gray2Light"
+                android:textSize="14sp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtTransaksi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="30 Transaksi"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/txtJumlahTransaksi" />
+
+            <TextView
+                android:id="@+id/txtJumlahTransaksi3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="Statistik transaksi 3 hari terakhir"
+                android:textColor="@color/Gray2Light"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/txtTransaksi" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/chartTransaksi"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintTop_toBottomOf="@id/txtJumlahTransaksi3" />
+
+            <TextView
+                android:id="@+id/txtJumlahKredit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Nominal Kredit "
+                android:layout_marginTop="16dp"
+                android:textColor="@color/Gray2Light"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/chartTransaksi"/>
+
+            <TextView
+                android:id="@+id/txtNominalKredit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="30 Transaksi"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/txtJumlahKredit" />
+
+            <TextView
+                android:id="@+id/txtJumlahDebit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Nominal Debit "
+                android:layout_marginTop="16dp"
+                android:textColor="@color/Gray2Light"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/txtNominalKredit"/>
+
+            <TextView
+                android:id="@+id/txtNominalDebit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="30 Transaksi"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/txtJumlahDebit" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>
